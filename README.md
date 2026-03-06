@@ -19,6 +19,7 @@ Key arguments (only the most useful ones):
 - `--optimizer` : optimizer, important options:
   - `SAM` : standard SAM
   - `D_SAM` : D-SAM optimizer defined in `D_SAM.py`
+  - **Note: For the best performance, it is highly recommended to use the D_FriendlySAM variant with --rho 5.**
 - `--lr` : learning rate (e.g. `0.1`)
 - `--momentum` : momentum (default `0.9`)
 - `--weight_decay` : weight decay (default `5e-4`)
