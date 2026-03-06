@@ -257,7 +257,7 @@ if __name__ == "__main__":
     parser.add_argument("--dataset", default='CIFAR10', type=str, help="CIFAR10, CIFAR100, SVHN or ImageNet.")
     parser.add_argument("--model", default='ResNet18', type=str, help="Name of model architecture")
     parser.add_argument("--optimizer", default='D_SAM', type=str, help="SGD, AdamW, SAM, ASAM, D_SAM or or Adai.")
-    parser.add_argument("--lr", default=1, type=float, help="Initial learning rate.")
+    parser.add_argument("--lr", default=0.1, type=float, help="Initial learning rate.")
     parser.add_argument("--momentum", default=0.9, type=float, help="Momentum.")
     parser.add_argument("--weight_decay", default=5e-4, type=float, help="Weight decay factor.")
     parser.add_argument("--batch_size", default=128, type=int, help="Batch size")
