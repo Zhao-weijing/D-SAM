@@ -28,22 +28,6 @@ Key arguments (only the most useful ones):
 - `--epochs` : training epochs (default `200`)
 - `--checkpoint_dir` : directory to save checkpoints and training history
 
-#### Example: train CIFAR-10 with SAM
-
-```bash
-python example_cifar.py \
-  --dataset CIFAR10 \
-  --model ResNet18 \
-  --optimizer SAM \
-  --lr 0.1 \
-  --momentum 0.9 \
-  --weight_decay 5e-4 \
-  --rho 0.5 \
-  --batch_size 128 \
-  --epochs 200 \
-  --checkpoint_dir 
-```
-
 #### Example: train CIFAR-10 with D-SAM
 
 ```bash
@@ -55,6 +39,22 @@ python example_cifar.py \
   --momentum 0.9 \
   --weight_decay 5e-4 \
   --rho 0.5 \
+  --batch_size 128 \
+  --epochs 200 \
+  --checkpoint_dir 
+```
+
+#### Example (recommended): train CIFAR-100 with D_FriendlySAM
+
+```bash
+python example_cifar.py \
+  --dataset CIFAR100 \
+  --model ResNet18 \
+  --optimizer D_FriendlySAM \
+  --lr 0.1 \
+  --momentum 0.9 \
+  --weight_decay 5e-4 \
+  --rho 5 \
   --batch_size 128 \
   --epochs 200 \
   --checkpoint_dir 
